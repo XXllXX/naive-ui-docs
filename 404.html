@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Naive UI</title>
+    <meta name="naive-ui-style" />
+    <meta name="vueuc-style" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/naive-ui-docs/assets/naivelogo-93278402.svg"
+    />
+    <script type="module" crossorigin src="/naive-ui-docs/assets/index-09f026e5.js"></script>
+    <link rel="stylesheet" href="/naive-ui-docs/assets/index-6bd6bbb4.css">    
+  </head>
+  <body>
+    <script>
+      const path = window.location.pathname
+      const pathLocale = path.startsWith('/en-US')
+        ? 'en-US'
+        : path.startsWith('/zh-CN')
+        ? 'zh-CN'
+        : undefined
+      function deriveTitleFromLocale(locale = navigator.language) {
+        if (locale === 'zh-CN') {
+          document.title = 'Naive UI: 一个 Vue 3 组件库'
+        } else {
+          document.title = 'Naive UI: A Vue 3 Component Library'
+        }
+      }
+      deriveTitleFromLocale(pathLocale)
+    </script>
+    <div id="app"></div>
+    
+  </body>
+</html>
