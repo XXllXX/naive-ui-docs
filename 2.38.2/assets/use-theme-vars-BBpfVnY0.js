@@ -1,1 +1,0 @@
-import{p as m,q as s,c,s as i}from"./index-DxZkTPDs.js";function d(){const n=m(s,null);return c(()=>{if(n===null)return i;const{mergedThemeRef:{value:r},mergedThemeOverridesRef:{value:e}}=n,o=(r==null?void 0:r.common)||i;return e!=null&&e.common?Object.assign({},o,e.common):o})}export{d as u};
